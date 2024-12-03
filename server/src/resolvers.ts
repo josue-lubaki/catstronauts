@@ -1,5 +1,7 @@
 
-export const resolvers = {
+import { Resolvers } from './types';
+
+export const resolvers : Resolvers = {
     Query : {
         // returns an array of Tracks that will be uses to populate
         tracksForHome : (_, __, { dataSources }) => {
